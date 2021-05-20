@@ -17,5 +17,6 @@
   "tags": [
     "rss", "bridge"
   ],
-  "minBoxVersion": "5.3.0"
+  "minBoxVersion": "5.3.0",
+  "postInstallMessage": "file://POSTINSTALL.md"
 }

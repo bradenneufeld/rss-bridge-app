@@ -1,2 +1,5 @@
+[0.2.0]
+* Added basic authentication and corresponding post install docs
+
 [0.1.0]
 * initial version

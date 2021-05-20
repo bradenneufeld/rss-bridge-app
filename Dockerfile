@@ -6,6 +6,7 @@ RUN mkdir -p /app/code /app/data/cache
 WORKDIR /app/code
 
 COPY start.sh whitelist.txt /app/code/
+COPY config.ini.php /app/data/
 
 RUN chmod +x /app/code/start.sh
 
@@ -15,7 +16,8 @@ RUN \
     && chown -R www-data.www-data /app/code
 
 RUN rm -rf /app/code/cache && \
-    ln -s /app/data/cache /app/code/cache
+    ln -s /app/data/cache /app/code/cache && \
+    ln -s /app/data/config.ini.php /app/code/config.ini.php
 
 # configure apache
 RUN rm /etc/apache2/sites-enabled/*
