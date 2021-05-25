@@ -1,1 +1,7 @@
-This app is installed with authentication with a default username of `admin` and password of `changeMe123`. These credentials will need to be used both to access the site as well as each feed. It can be changed by updating the config.ini.php file located in `/app/data`. 
+This app is pre-setup with an admin account. The initial credentials are:
+  
+**Username**: admin<br/>
+**Password**: changeme123<br/>
+
+Please change the admin password immediately by editing `/app/data/config.ini.php`.
+These credentials are used to access the site as well as each feed.
