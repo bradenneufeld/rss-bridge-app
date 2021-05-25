@@ -27,7 +27,7 @@ describe('Application life cycle test', function () {
     var app;
 
     let BASIC_AUTH_USER = "admin";
-    let BASIC_AUTH_PASS = "changeMe123";
+    let BASIC_AUTH_PASS = "changeme123";
 
     let options = new chrome.Options();
     options.windowSize({ width: 1280, height: 1024 });
