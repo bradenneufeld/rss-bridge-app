@@ -2,7 +2,10 @@
 
 set -eu
 
-mkdir -p /app/data
+mkdir -p /app/data/cache
+
+[[ ! -f /app/data/config.ini.php ]] && cp /app/pkg/config.ini.php /app/data/config.ini.php
+[[ ! -f /app/data/whitelist.txt ]] && echo "*" > /app/data/whitelist.txt
 
 echo "==> Changing permissions"
 chmod 777 -R /app/data/cache
