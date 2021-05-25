@@ -19,5 +19,9 @@
   ],
   "contactEmail": "support@cloudron.io",
   "minBoxVersion": "5.3.0",
-  "postInstallMessage": "file://POSTINSTALL.md"
+  "postInstallMessage": "file://POSTINSTALL.md",
+  "mediaLinks": [
+    "https://screenshots.cloudron.io/com.rssbridgeapp.cloudronapp/welcome.png",
+    "https://screenshots.cloudron.io/com.rssbridgeapp.cloudronapp/twitterbridge_atom.png"
+  ]
 }
