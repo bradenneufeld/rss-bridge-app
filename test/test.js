@@ -19,8 +19,6 @@ var execSync = require('child_process').execSync,
 var chrome = require('selenium-webdriver/chrome'),
     Builder = require('selenium-webdriver').Builder;
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-
 describe('Application life cycle test', function () {
     this.timeout(0);
 
@@ -60,7 +58,7 @@ describe('Application life cycle test', function () {
         });
     }
 
-    it('build app', function () {
+    xit('build app', function () {
         execSync('cloudron build', { cwd: path.resolve(__dirname, '..'), stdio: 'inherit' });
     });
 
@@ -112,9 +110,8 @@ describe('Application life cycle test', function () {
     });
 
     // test update
-    // TODO can only do this part after there is a version in the store
-    xit('can install previous version from appstore', function () {
-        execSync('cloudron install --appstore-id com.astralapp.cloudronapp --location ' + LOCATION, { cwd: path.resolve(__dirname, '..'), stdio: 'inherit' });
+    it('can install previous version from appstore', function () {
+        execSync('cloudron install --appstore-id com.rssbridgeapp.cloudronapp --location ' + LOCATION, { cwd: path.resolve(__dirname, '..'), stdio: 'inherit' });
         var inspect = JSON.parse(execSync('cloudron inspect'));
         app = inspect.apps.filter(function (a) { return a.location === LOCATION; })[0];
         expect(app).to.be.an('object');
