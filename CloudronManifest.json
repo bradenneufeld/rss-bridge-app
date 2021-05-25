@@ -17,6 +17,7 @@
   "tags": [
     "rss", "bridge"
   ],
+  "contactEmail": "support@cloudron.io",
   "minBoxVersion": "5.3.0",
   "postInstallMessage": "file://POSTINSTALL.md"
 }
