@@ -20,6 +20,8 @@
   "contactEmail": "support@cloudron.io",
   "minBoxVersion": "5.3.0",
   "postInstallMessage": "file://POSTINSTALL.md",
+  "documentationUrl": "https://docs.cloudron.io/apps/rss-bridge/",
+  "forumUrl": "https://forum.cloudron.io/category/131/rss-bridge",
   "mediaLinks": [
     "https://screenshots.cloudron.io/com.rssbridgeapp.cloudronapp/welcome.png",
     "https://screenshots.cloudron.io/com.rssbridgeapp.cloudronapp/twitterbridge_atom.png"
