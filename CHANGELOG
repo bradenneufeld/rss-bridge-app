@@ -1,3 +1,6 @@
+[0.3.0]
+* Set default password to `changeme123`
+
 [0.2.0]
 * Added basic authentication and corresponding post install docs
 
