@@ -1,6 +1,4 @@
-.git
-.gitignore
-.dockerignore
-node_modules
-screenshots
+test/*
+.git/*
+screenshots/*
 
