@@ -5,7 +5,7 @@
   "description": "file://DESCRIPTION.md",
   "changelog": "file://CHANGELOG",
   "tagline": "The RSS feed for websites missing it",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "healthCheckPath": "/",
   "httpPort": 8000,
   "addons": {
