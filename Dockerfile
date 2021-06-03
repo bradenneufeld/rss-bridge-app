@@ -14,7 +14,8 @@ RUN \
 
 RUN rm -rf /app/code/cache && \
     ln -s /app/data/cache /app/code/cache && \
-    ln -s /app/data/config.ini.php /app/code/config.ini.php
+    ln -s /app/data/config.ini.php /app/code/config.ini.php && \
+    ln -s /app/data/whitelist.txt /app/code/whitelist.txt
 
 # configure apache
 RUN rm /etc/apache2/sites-enabled/*
