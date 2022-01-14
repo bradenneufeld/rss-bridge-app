@@ -37,10 +37,10 @@ describe('Application life cycle test', function () {
     });
 
     async function checkTwitterBridge() {
-        const response = await superagent.get(`https://${app.fqdn}/?action=display&bridge=Twitter&context=By+username&u=jack&format=Json`)
+        const response = await superagent.get(`https://${app.fqdn}/?action=display&bridge=Reddit&context=single&r=cloudron&score=&format=Json`)
             .auth(BASIC_AUTH_USER, BASIC_AUTH_PASS);
         expect(response.status).to.eql(200);
-        expect(response.body.home_page_url).to.eql('https://twitter.com/jack');
+        expect(response.body.home_page_url).to.eql('https://www.reddit.com');
     }
 
     function getAppInfo() {
