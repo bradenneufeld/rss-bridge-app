@@ -1,4 +1,4 @@
-This app packages RSS-Bridge Version <upstream>2021-04-25</upstream>.
+This app packages RSS-Bridge Version <upstream>2022-01-20</upstream>.
 
 ## The RSS feed for websites missing it
 

@@ -1,3 +1,10 @@
+[1.1.1]
+* Update RSS Bridge to 2022-01-20
+* [Full changelog](https://github.com/RSS-Bridge/rss-bridge/releases/tag/2022-01-20)
+* Dark mode based on user's browser preferences (#2029)
+* Make HTML format default, remove other buttons (#2101)
+* Add button for bridge maintainers' donation URLs (#2102)
+
 [1.1.0]
 * Update base image to 3.2.0
 
@@ -15,3 +22,4 @@
 
 [0.1.0]
 * initial version
+
