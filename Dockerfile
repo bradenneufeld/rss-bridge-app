@@ -1,13 +1,13 @@
 FROM cloudron/base:3.2.0@sha256:ba1d566164a67c266782545ea9809dc611c4152e27686fd14060332dd88263ea
 
-ARG RELEASE=2022-01-20
+ARG VERSION=2022-06-10
 
 RUN mkdir -p /app/code
 WORKDIR /app/code
 
 RUN \
 # Install RSS-Bridge
-    curl -Ls https://github.com/RSS-Bridge/rss-bridge/archive/${RELEASE}.tar.gz | tar -xzf - --strip 1 -C /app/code \
+    curl -Ls https://github.com/RSS-Bridge/rss-bridge/archive/${VERSION}.tar.gz | tar -xzf - --strip 1 -C /app/code \
     && chown -R www-data.www-data /app/code
 
 RUN rm -rf /app/code/cache && \
