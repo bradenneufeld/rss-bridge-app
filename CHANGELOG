@@ -1,3 +1,13 @@
+[1.2.0]
+* Update RSS Bridge to 2022-06-10
+* [Full changelog](https://github.com/RSS-Bridge/rss-bridge/releases/tag/2022-06-10)
+* [GithubPullRequestBridge]: Sort by newest PRs by @SuperSandro2000 in #2064
+* [GBAtemp] Fix content extraction (#2313) by @ORelio in #2314
+* [Cdaction] Add new bridge by @tomaszkane in #2431
+* [CI] Add check, if php files are marked as executable by @em92 in #2439
+* [GooglePlayStoreBridge] Add bridge by @yamanq in #2110
+* [Core] Define buster instead of default bullseye for base image by @Bockiii in #2446
+
 [1.1.1]
 * Update RSS Bridge to 2022-01-20
 * [Full changelog](https://github.com/RSS-Bridge/rss-bridge/releases/tag/2022-01-20)

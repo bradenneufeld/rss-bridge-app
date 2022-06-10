@@ -1,6 +1,6 @@
-This app packages RSS-Bridge Version <upstream>2022-01-20</upstream>.
+## Abut
 
-## The RSS feed for websites missing it
+The RSS feed for websites missing it.
 
 RSS-Bridge is a PHP project capable of generating RSS and Atom feeds for websites that don't have one. It can be used on webservers or as a stand-alone application in CLI mode.
 
