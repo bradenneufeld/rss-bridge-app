@@ -1,3 +1,10 @@
+[1.3.0]
+* Update RSS Bridge to 2022-06-14
+* [Full changelog](https://github.com/RSS-Bridge/rss-bridge/releases/tag/2022-06-14)
+* BridgeCard: Use full bridge name in data-ref tag (#1560)
+* Open new feeds in a new tab (#1389)
+
+
 [1.2.0]
 * Update RSS Bridge to 2022-06-10
 * [Full changelog](https://github.com/RSS-Bridge/rss-bridge/releases/tag/2022-06-10)
