@@ -10,7 +10,11 @@ RUN \
     curl -Ls https://github.com/RSS-Bridge/rss-bridge/archive/${VERSION}.tar.gz | tar -xzf - --strip 1 -C /app/code \
     && chown -R www-data.www-data /app/code
 
-RUN rm -rf /app/code/cache && \
+RUN mv /app/code/bridges /app/data && \
+    rm -rf /app/code/cache && \
+    rm -rf /app/code/config && \
+    ln -s /app/data/config /app/code/config && \
+    ln -s /app/data/bridges /app/code/bridges && \
     ln -s /app/data/cache /app/code/cache && \
     ln -s /app/data/config.ini.php /app/code/config.ini.php && \
     ln -s /app/data/whitelist.txt /app/code/whitelist.txt
@@ -29,6 +33,6 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 # Configure mod_php
 RUN a2enmod headers
 
-COPY config.ini.php start.sh /app/pkg/
+COPY config.ini.php start.sh nginx.conf /app/pkg/
 
 CMD [ "/app/pkg/start.sh" ]
